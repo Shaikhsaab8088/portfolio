@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tousif Shaikh - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Portfolio</h1>
+            <button class="menu-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+                    <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sidebar with Login Button -->
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+                <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li class="login-btn-container">
+                    <button class="login-btn" id="sidebarLoginBtn">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <button class="close-btn">×</button>
+    </aside>
+
+    <!-- Login Modal -->
+    <div class="login-modal" id="loginModal">
+        <div class="login-modal-content">
+            <span class="login-modal-close">&times;</span>
+            <h2>Admin Login</h2>
+            <form id="modalLoginForm">
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Hello, I'm <span class="highlight">Hasnain Shaikh</span></h2>
+                    <h3>Web Developer & Designer</h3>
+                    <p>I create beautiful, functional websites that help businesses grow.</p>
+                    <a href="#contact" class="btn">Get In Touch</a>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/profile.jpg" alt="Profile Picture" onerror="this.src='https://via.placeholder.com/400'">
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="project-card">
+                    <img src="assets/images/project1.jpg" alt="Blog Website">
+                    <div class="project-info">
+                        <h3>Blog Website</h3>
+                        <p>A responsive blog built with HTML, CSS, and JavaScript.</p>
+                        <div class="project-links">
+                            <a href="blog.html" target="_blank" class="btn-small">Live Demo</a>
+                            <a href="#" class="btn-small btn-outline">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/project2.jpg" alt="E-Commerce Store">
+                    <div class="project-info">
+                        <h3>Thunder</h3>
+                        <p>Online store with shopping cart functionality.</p>
+                        <div class="project-links">
+                            <a href="ecommerce/ecommerce.html" class="btn-small">Live Demo</a>
+                            <a href="#" class="btn-small btn-outline">Code</a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="project-card">
+                        <img src="assets/images/project3.jpg" alt="Weather App" onerror="this.src='https://via.placeholder.com/300'">
+                        <div class="project-info">
+                            <h3>Weather App</h3>
+                            <p>Real-time weather information application.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn-small">Open</a>
+                                <a href="#" class="btn-small btn-outline">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-container">
+                    <div class="skill">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level html">90%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level css">85%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level js">75%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-react"></i>
+                        <h3>React</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level react">70%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p><i class="fas fa-envelope"></i> hasnainshaikh662005@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +91 8855918029</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Tousif Shaikh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

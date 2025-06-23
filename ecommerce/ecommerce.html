@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thunder</title>
+    <link rel="stylesheet" href="ecommerce-styles.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">Thunder</a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="ecommerce.html">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+                <div class="menu-icon" onclick="menutoggle()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            
+            <!-- Hero Section -->
+            <div class="row">
+                <div class="col-2">
+                    <h1>Give Your Workout<br>A New Style!</h1>
+                    <p>Success isn't always about greatness. It's about consistency. Consistent<br>hard work gains success. Greatness will come.</p>
+                    <a href="#products" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/Thunder.png" alt="Hero Image">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Categories -->
+    <section class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/hulk.jpeg" alt="hulk">
+                </div>
+                <div class="col-3">
+                    <img src="images/red hulk.jpeg" alt="redhulk">
+                </div>
+                <div class="col-3">
+                    <img src="images/baki.jpeg" alt="baki">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="small-container" id="products">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-1.png" alt="Product 1">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$50.00</p>
+                <button class="add-to-cart" data-id="1" data-name="Red Printed T-Shirt" data-price="50.00">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="images/Thunder shoes.png" alt="Product 2">
+                <h4>HRX Sports Shoes</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$75.00</p>
+                <button class="add-to-cart" data-id="2" data-name="HRX Sports Shoes" data-price="75.00">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="images/Thunder Track pant.png" alt="Product 3">
+                <h4>Men Track Pants</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>$45.00</p>
+                <button class="add-to-cart" data-id="3" data-name="Men Track Pants" data-price="45.00">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="images/blue-t-shirt.png" alt="Product 4">
+                <h4>Blue Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$55.00</p>
+                <button class="add-to-cart" data-id="4" data-name="Blue Printed T-Shirt" data-price="55.00">Add to Cart</button>
+            </div>
+        </div>
+
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/puma-t-shirt.png" alt="Product 5">
+                <h4>Grey Sneakers</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>$90.00</p>
+                <button class="add-to-cart" data-id="5" data-name="Grey Sneakers" data-price="90.00">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="images/puma-t-shirt.png" alt="Product 6">
+                <h4>Black Puma T-Shirt</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>$60.00</p>
+                <button class="add-to-cart" data-id="6" data-name="Black Puma T-Shirt" data-price="60.00">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="images/puma-t-shirt.png" alt="Product 7">
+                <h4>HRX Socks</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$20.00</p>
+                <button class="add-to-cart" data-id="7" data-name="HRX Socks" data-price="20.00">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="images/puma-t-shirt.png" alt="Product 8">
+                <h4>Fossil Watch</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$120.00</p>
+                <button class="add-to-cart" data-id="8" data-name="Fossil Watch" data-price="120.00">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer -->
+    <section class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/exclusive.png" class="offer-img" alt="Exclusive Offer">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on Thunder</p>
+                    <h1>Smart Band 4</h1>
+                    <small>The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3) AMOLED color full-touch display with adjustable brightness, so everything is clear as can be.</small>
+                    <a href="#" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial">
+        <div class="small-container">
+            <h2 class="title">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, quis aliquam nisl nunc eu nisl.</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <img src="images/user-1.png" alt="User 1">
+                    <h3>Sarah Parker</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, quis aliquam nisl nunc eu nisl.</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <img src="images/user-1.png" alt="User 2">
+                    <h3>Mike Smith</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, quis aliquam nisl nunc eu nisl.</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <img src="images/user-1.png" alt="User 3">
+                    <h3>Mabel Joe</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="brands">
+        <div class="small-container">
+            <div class="row">
+                <!-- <div class="col-5">
+                    <img src="images/logo-godrej.png" alt="Godrej">
+                </div> -->
+                <div class="col-5">
+                    <img src="images/logo-visa.png" alt="Visa">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-upi.png" alt="Upi">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-paypal.png" alt="Paypal">
+                </div>
+                <!-- <div class="col-5">
+                    <img src="images/logo-philips.png" alt="Philips">
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iOS mobile phone.</p>
+                    <div class="app-logo">
+                        <a href="https://play.google.com/store" target="_blank" aria-label="Download on Google Play">
+                            <i class='fab fa-google-play'></i>
+                        </a>
+                        <a href="https://www.apple.com/app-store/" target="_blank">
+                            <i class='fab fa-app-store' style='font-size:48px;color:red'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Thunder</h3>
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2025 - Thunder</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <div class="cart-total">
+                <h3>Total: <span id="cartTotal">$0.00</span></h3>
+            </div>
+            <button class="btn checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="ecommerce-script.js"></script>
+</body>
+</html>
